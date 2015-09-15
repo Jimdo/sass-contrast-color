@@ -1,0 +1,8 @@
+@function brightness($color)
+  @return (red($color) + green($color) + blue($color)) / (255*3)
+
+@function brightness_ratio($base, $color)
+  @return abs(brightness($base) - brightness($color))
+
+=contrast($attr, $base, $color1, $color2)
+  #{$attr}: if(brightness_ratio($base, $color1) > brightness_ratio($base, $color2), $color1, $color2)

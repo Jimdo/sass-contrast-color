@@ -1,0 +1,17 @@
+{
+  "name": "sass-contrast-color",
+  "version": "0.0.0",
+  "authors": [
+    "Henrik Fricke <henrik.fricke@jimdo.com>"
+  ],
+  "description": "Mixin to use contrast color functionality",
+  "main": "contrast.sass",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
