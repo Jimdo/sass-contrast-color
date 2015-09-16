@@ -1,5 +1,5 @@
 # sass-contrast-color
-> Mixin to get the color with higher contrast
+> Function to get the color with higher contrast
 
 ## Install
 
@@ -18,24 +18,23 @@ Or if you're using SCSS:
 ```
 Adjust the tree to your project.
 
-## Usage
+## API
 
 ```sass
-  +contrast($attribute, $base-color, $color1, $color2)
+  contrast($base-color, $color1, $color2)
 ```
 ### Parameter:
 
-* $attribute - set the attribute where to write the value
 * $base-color - set the basic color
 * $color1 - first color to compare with base-color
 * $color2 - second color to compare with base-color
 
-### Example 
+## Example
 
 ```sass
   body
     background-color: red
-    +contrast(color, red, black, white)
+    color: contrast(red, black, white)
 ```
 
 The example will compare black and white with red and give back the more higher contrast color.
