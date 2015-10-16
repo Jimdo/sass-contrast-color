@@ -5,7 +5,7 @@
 
 1. Install the bower component to your project:
 ```
-  bower install Jimdo/sass-contrast-color --save-dev
+  bower install sass-contrast-color --save-dev
 ```
 
 2. Import the Sass file into your code:
@@ -21,7 +21,11 @@ Adjust the tree to your project.
 ## API
 
 ```sass
-  contrast($base-color, $color1, $color2)
+// Compare colors to higher contrast
+contrast($base-color, $color1, $color2)
+
+// Compare colors to lower contrast (inverting the former contrast function)
+invert-contrast($base-color, $color1, $color2)
 ```
 ### Parameter:
 

@@ -1,11 +1,11 @@
 {
   "name": "sass-contrast-color",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "authors": [
-    "Henrik Fricke <henrik.fricke@jimdo.com>"
+    "Jimdo GmbH <template-design@jimdo.com>"
   ],
   "description": "sass contrast color function",
-  "keywords": ["sass", "contrast", "color"],
+  "keywords": ["sass", "contrast", "color", "invert-contrast"],
   "main": "contrast.sass",
   "license": "MIT",
   "ignore": [

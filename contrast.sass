@@ -21,3 +21,11 @@
 
 @function contrast($base, $color1: #fff, $color2: #000)
   @return if(brightness_ratio($base, $color1) > brightness_ratio($base, $color2), $color1, $color2)
+
+
+/////////////////////////////////
+// Compare colors to lower contrast (inverting the former contrast function)
+/////////////////////////////////
+
+@function invert-contrast($base, $color1: #fff, $color2: #000)
+  @return if(brightness_ratio($base, $color1) > brightness_ratio($base, $color2), $color2, $color1)
